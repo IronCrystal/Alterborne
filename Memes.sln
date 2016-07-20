@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memes.CSharp.Plugins", "Memes.CSharp.Plugins.csproj", "{34757CC9-1BFA-2C3A-3770-90F0E4010348}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memes.CSharp", "Memes.CSharp.csproj", "{5255AFA3-F0CA-A058-42B8-9C33E00EC2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memes.CSharp.Editor", "Memes.CSharp.Editor.csproj", "{8368EBF0-DACF-9938-7912-7BD23919666E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34757CC9-1BFA-2C3A-3770-90F0E4010348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34757CC9-1BFA-2C3A-3770-90F0E4010348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34757CC9-1BFA-2C3A-3770-90F0E4010348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34757CC9-1BFA-2C3A-3770-90F0E4010348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5255AFA3-F0CA-A058-42B8-9C33E00EC2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5255AFA3-F0CA-A058-42B8-9C33E00EC2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5255AFA3-F0CA-A058-42B8-9C33E00EC2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5255AFA3-F0CA-A058-42B8-9C33E00EC2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8368EBF0-DACF-9938-7912-7BD23919666E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8368EBF0-DACF-9938-7912-7BD23919666E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8368EBF0-DACF-9938-7912-7BD23919666E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8368EBF0-DACF-9938-7912-7BD23919666E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

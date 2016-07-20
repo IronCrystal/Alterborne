@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: bd80b7a18a327c14c9f278ccd010c688
+timeCreated: 1468641705
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dungeon_0
+    21300002: dungeon_1
+    21300004: dungeon_2
+    21300006: dungeon_3
+    21300008: dungeon_4
+    21300010: dungeon_5
+    21300012: dungeon_6
+    21300014: dungeon_7
+    21300016: dungeon_8
+    21300018: dungeon_9
+    21300020: dungeon_10
+    21300022: dungeon_11
+    21300024: dungeon_12
+    21300026: dungeon_13
+    21300028: dungeon_14
+    21300030: dungeon_15
+    21300032: dungeon_16
+    21300034: dungeon_17
+    21300036: dungeon_18
+    21300038: dungeon_19
+    21300040: dungeon_20
+    21300042: dungeon_21
+    21300044: dungeon_22
+    21300046: dungeon_23
+    21300048: dungeon_24
+    21300050: dungeon_25
+    21300052: dungeon_26
+    21300054: dungeon_27
+    21300056: dungeon_28
+    21300058: dungeon_29
+    21300060: dungeon_30
+    21300062: dungeon_31
+    21300064: dungeon_32
+    21300066: dungeon_33
+    21300068: dungeon_34
+    21300070: dungeon_35
+    21300072: dungeon_36
+    21300074: dungeon_37
+    21300076: dungeon_38
+    21300078: dungeon_39
+    21300080: dungeon_40
+    21300082: dungeon_41
+    21300084: dungeon_42
+    21300086: dungeon_43
+    21300088: dungeon_44
+    21300090: dungeon_45
+    21300092: dungeon_46
+    21300094: dungeon_47
+    21300096: dungeon_48
+    21300098: dungeon_49
+    21300100: dungeon_50
+    21300102: dungeon_51
+    21300104: dungeon_52
+    21300106: dungeon_53
+    21300108: dungeon_54
+    21300110: dungeon_55
+    21300112: dungeon_56
+    21300114: dungeon_57
+    21300116: dungeon_58
+    21300118: dungeon_59
+    21300120: dungeon_60
+    21300122: dungeon_61
+    21300124: dungeon_62
+    21300126: dungeon_63
+    21300128: dungeon_64
+    21300130: dungeon_65
+    21300132: dungeon_66
+    21300134: dungeon_67
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dungeon_0
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1055
+        width: 20
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: dungeon_1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 1055
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+    - name: dungeon_2
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1055
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+    - name: dungeon_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1055
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+    - name: dungeon_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 965
+        width: 105
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+    - name: dungeon_5
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 860
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+    - name: dungeon_6
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 860
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -80, y: 80}
+        - {x: -80, y: -80}
+        - {x: 80, y: -80}
+        - {x: 80, y: 80}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

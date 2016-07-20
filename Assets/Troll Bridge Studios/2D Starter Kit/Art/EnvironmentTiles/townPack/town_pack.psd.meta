@@ -1,0 +1,551 @@
+fileFormatVersion: 2
+guid: 32f84cd374f9dd147bb69ea793444f91
+timeCreated: 1451920623
+licenseType: Store
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: town_pack_0
+    21300002: town_pack_1
+    21300004: town_pack_2
+    21300006: town_pack_3
+    21300008: town_pack_4
+    21300010: town_pack_5
+    21300012: town_pack_6
+    21300014: town_pack_7
+    21300016: town_pack_8
+    21300018: town_pack_9
+    21300020: town_pack_10
+    21300022: town_pack_11
+    21300024: town_pack_12
+    21300026: town_pack_13
+    21300028: town_pack_14
+    21300030: town_pack_15
+    21300032: town_pack_16
+    21300034: town_pack_17
+    21300036: town_pack_18
+    21300038: town_pack_19
+    21300040: town_pack_20
+    21300042: town_pack_21
+    21300044: town_pack_22
+    21300046: town_pack_23
+    21300048: town_pack_24
+    21300050: town_pack_25
+    21300052: town_pack_26
+    21300054: town_pack_27
+    21300056: town_pack_28
+    21300058: town_pack_29
+    21300060: town_pack_30
+    21300062: town_pack_31
+    21300064: town_pack_32
+    21300066: town_pack_33
+    21300068: town_pack_34
+    21300070: town_pack_35
+    21300072: town_pack_36
+    21300074: town_pack_37
+    21300076: town_pack_38
+    21300078: town_pack_39
+    21300080: town_pack_40
+    21300082: town_pack_41
+    21300084: town_pack_42
+    21300086: town_pack_43
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Web
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -3
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: town_pack_0
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 845
+        width: 475
+        height: 356
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_1
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 1040
+        width: 245
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_2
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 720
+        width: 240
+        height: 540
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_3
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 880
+        width: 160
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_4
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 755
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 730
+        width: 65
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 732
+        width: 61
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_7
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 677
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_8
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 679
+        width: 62
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_9
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 729
+        width: 53
+        height: 48
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_10
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 725
+        width: 60
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_11
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_12
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1201
+        width: 475
+        height: 189
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_13
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 740
+        width: 240
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 60
+        width: 470
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_15
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 120
+        width: 135
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_16
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 165
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_17
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 165
+        width: 40
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_18
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 325
+        width: 65
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_19
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 325
+        width: 180
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_20
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 325
+        width: 75
+        height: 20
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 260
+        height: 160
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_22
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 915
+        width: 74
+        height: 315
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_23
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 897
+        width: 275
+        height: 453
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_24
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 660
+        width: 75
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 320
+        width: 240
+        height: 340
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 455
+        width: 320
+        height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_27
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 460
+        width: 80
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 460
+        width: 240
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_29
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1260
+        width: 240
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_30
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 765
+        width: 65
+        height: 25
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_31
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 720
+        width: 60
+        height: 35
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_33
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 505
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_34
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 445
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_35
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 400
+        width: 65
+        height: 45
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_36
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 565
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_37
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 565
+        width: 165
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_38
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 630
+        width: 65
+        height: 168
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_39
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 565
+        width: 50
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_40
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 565
+        width: 270
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_41
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 845
+        width: 275
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_42
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 845
+        width: 75
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_32
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 120
+        width: 135
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: town_pack_43
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 85
+        width: 65
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
