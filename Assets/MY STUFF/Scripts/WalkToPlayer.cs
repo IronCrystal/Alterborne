@@ -3,28 +3,23 @@ using System.Collections;
 
 public class WalkToPlayer : MonoBehaviour {
 
-    public Transform myTransform;
-    private GameObject GOToGoto;
+	public Transform aggro;
     public float speed;
 
 	// Use this for initialization
 	void Start () {
-        GOToGoto = GameObject.Find("player");
+        
     }
 	
 	// Update is called once per frame
 	void Update () {
-        GOToGoto = GameObject.Find("player");
-        if (GOToGoto != null && myTransform != null) {
-            Transform target = GOToGoto.transform;
-
-            //if (Vector3.Distance(myTransform.position, target.position) > 1f) {
-            //   myTransform.position += target.position * speed * Time.deltaTime;
-            //}
-            myTransform.position = Vector2.MoveTowards(myTransform.position, target.position, speed * Time.deltaTime);
-        }else
+		float distance = Vector3.Distance(transform.position, aggro.position);
+		if (aggro != null && transform != null && distance >= 1.0f) {
+            transform.position = Vector2.MoveTowards(transform.position, aggro.position, speed * Time.deltaTime);
+        }
+		/*else
         {
             Debug.Log("Something is null!");
-        }
+        }*/
 	}
 }
