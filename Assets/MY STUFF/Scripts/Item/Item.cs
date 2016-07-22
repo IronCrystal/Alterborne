@@ -2,7 +2,7 @@
 using System.Collections;
 
 [System.Serializable]
-public class Item {
+public class Item : MonoBehaviour{
     public string itemName;
     public int itemID;
     public string itemDesc;
@@ -13,7 +13,7 @@ public class Item {
         Weapon,
         Apparel,
         Consumable
-    }
+	};
 
     public Item(string name, int id, string desc, ItemType type) {
         this.itemName = name;
@@ -23,7 +23,7 @@ public class Item {
         this.itemIcon = Resources.Load<Texture2D>("Item Icons/" + name);
     }
 
-    public Item() {
+	public Item(Item oldItem) : this(oldItem.itemName, oldItem.itemID, oldItem.itemDesc, oldItem.itemType){ }
 
-    }
+    public Item() { }
 }

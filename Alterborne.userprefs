@@ -1,14 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MY STUFF\Scripts\DamageEnemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MY STUFF\Scripts\PickUpItem.cs">
     <Files>
-      <File FileName="Assets\MY STUFF\Scripts\CheckHealth.cs" Line="21" Column="5" />
-      <File FileName="Assets\MY STUFF\Scripts\DamageEnemy.cs" Line="53" Column="45" />
-      <File FileName="Assets\MY STUFF\Scripts\Stats.cs" Line="28" Column="10" />
-      <File FileName="Assets\MY STUFF\Scripts\WalkToPlayer.cs" Line="23" Column="12" />
-      <File FileName="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\Player\Eight_Direction\Eight_Direction_Movement.cs" Line="66" Column="21" />
-      <File FileName="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\Game Helper Managers\Player_Manager.cs" Line="123" Column="44" />
-      <File FileName="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\Game Helper Managers\Helper_Manager.cs" Line="402" Column="2" />
+      <File FileName="Assets\MY STUFF\Scripts\Item\Inventory.cs" Line="38" Column="1" />
+      <File FileName="Assets\MY STUFF\Scripts\PickUpItem.cs" Line="29" Column="18" />
+      <File FileName="Assets\MY STUFF\Scripts\Item\Item.cs" Line="17" Column="2" />
+      <File FileName="Assets\MY STUFF\Scripts\Item\PotionHP.cs" Line="7" Column="77" />
+      <File FileName="Assets\MY STUFF\Scripts\Item\ItemDatabase.cs" Line="21" Column="5" />
+      <File FileName="Assets\MY STUFF\Scripts\Item\Sword.cs" Line="7" Column="86" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

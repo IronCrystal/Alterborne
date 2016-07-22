@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 402684}
   - 212: {fileID: 21255972}
   - 61: {fileID: 6130414}
-  - 114: {fileID: 11461752}
+  - 114: {fileID: 11439070}
   m_Layer: 0
   m_Name: HP Potion
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 109908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -2.1548734, y: -3.9033303, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!114 &11461752
+--- !u!114 &11439070
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -53,15 +53,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 109908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e92befe08595784c882760e82b295ea, type: 3}
+  m_Script: {fileID: 11500000, guid: b827e9e2786fdc246b6e4720b13c949d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item:
-    itemName: HP Potion
-    itemID: 1
-    itemDesc: Refreshing!
-    itemIcon: {fileID: 2800000, guid: 4a6db3295a2d31e46acd562d09fbd626, type: 3}
-    itemType: 2
+  itemName: HP Potion
+  itemID: 1
+  itemDesc: Refreshing!
+  itemIcon: {fileID: 2800000, guid: 4a6db3295a2d31e46acd562d09fbd626, type: 3}
+  itemType: 2
 --- !u!212 &21255972
 SpriteRenderer:
   m_ObjectHideFlags: 1

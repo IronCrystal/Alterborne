@@ -10,10 +10,10 @@ GameObject:
   - 4: {fileID: 447866}
   - 212: {fileID: 21237604}
   - 61: {fileID: 6130138}
-  - 114: {fileID: 11483266}
+  - 114: {fileID: 11414622}
   m_Layer: 0
   m_Name: Master Sword
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 188446}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.31, y: -3.86, z: 0}
+  m_LocalPosition: {x: -9.128617, y: -3.4264932, z: 0}
   m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -45,7 +45,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 2, y: 1.7099999}
---- !u!114 &11483266
+--- !u!114 &11414622
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -53,15 +53,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 188446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e92befe08595784c882760e82b295ea, type: 3}
+  m_Script: {fileID: 11500000, guid: a65384096a3dec64286c508cebcbe633, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item:
-    itemName: Master Sword
-    itemID: 0
-    itemDesc: Link's Most Powerful Sword
-    itemIcon: {fileID: 2800000, guid: 0d8eab50ec1d6ee42910e39f5fca0c65, type: 3}
-    itemType: 0
+  itemName: Master Sword
+  itemID: 0
+  itemDesc: Link's Master Sword
+  itemIcon: {fileID: 2800000, guid: 0d8eab50ec1d6ee42910e39f5fca0c65, type: 3}
+  itemType: 0
 --- !u!212 &21237604
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class PickUpItem : MonoBehaviour {
-
-    public Item item;
+	Inventory inv;
+	Item item;
+	//PotionHP potion20;
 
 	// Use this for initialization
 	void Start () {
@@ -17,16 +18,19 @@ public class PickUpItem : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other) {
         Debug.Log("Collision entered!");
-        if (item != null) {
-            if (other.gameObject.tag == "Player") {
-                Inventory inv = GameObject.FindGameObjectWithTag("Inventory").GetComponent<Inventory>();
-                if (inv.inventory.Count < (inv.slotsX * inv.slotsY)) {
-                    inv.AddItem(item);
-                    Destroy(gameObject);
-                }
-            }else {
-                Debug.Log("Not a player!");
+        if (other.tag == "Item") {
+		inv = transform.GetChild(1).GetComponent<Inventory>();
+		item = other.GetComponent<Item> ();
+			/*if (item.itemID == 1) {
+				potion20 = 
+			}*/
+            if (inv.inventory.Count < (inv.slotsX * inv.slotsY)) {
+				inv.AddItemToInv(item.itemName);
+                Destroy(other.gameObject);
             }
+        }
+		else {
+            Debug.Log("Not an item!");
         }
     }
 }

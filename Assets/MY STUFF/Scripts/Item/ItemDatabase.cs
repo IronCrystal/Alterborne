@@ -3,10 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ItemDatabase : MonoBehaviour {
-    public List<Item> items = new List<Item>();
+	public Dictionary<string, Item> database = new Dictionary<string, Item>();
+	public Inventory inv;
 
     void Start() {
-        items.Add(new Item("Master Sword", 0, "Link's Master Sword", Item.ItemType.Weapon));
-        items.Add(new Item("HP Potion", 1, "Refreshing!", Item.ItemType.Consumable));
+		AddItemToDB ("Sword", new Sword ());
+		AddItemToDB ("HP Potion", new PotionHP ());
     }
+
+	void AddItemToDB(string name, Item item){
+		database [name] = item;
+	}
+
+	public Item AddItemToInv(string name){
+		Item item = database[name];
+		Item newItem = new Item (item);
+		//inv.AddItem (newItem);
+		return newItem;
+	}
 }
