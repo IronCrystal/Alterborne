@@ -14,7 +14,7 @@ public class DamageEnemy : MonoBehaviour {
     Quaternion startingAngle = Quaternion.AngleAxis(-60, Vector3.forward);
     Quaternion stepAngle = Quaternion.AngleAxis(12, Vector3.forward);
 
-	public Stats playerStats;
+	//public Stats playerStats;
 	Animator playerAnim;
 	int playerDirection;
 	Quaternion attackDirection;
@@ -102,6 +102,8 @@ public class DamageEnemy : MonoBehaviour {
 
             }          
             cooldown = cd;
+            enemiesHit = new GameObject[10];
+            enemiesHitLength = 0;
         }
 
     }

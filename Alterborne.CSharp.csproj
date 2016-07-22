@@ -58,6 +58,12 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -80,7 +86,11 @@
     <Compile Include="Assets\MY STUFF\Scripts\GetManaDescription.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\GetPlayerHP.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\GetPlayerMana.cs" />
+    <Compile Include="Assets\MY STUFF\Scripts\Item\Inventory.cs" />
+    <Compile Include="Assets\MY STUFF\Scripts\Item\Item.cs" />
+    <Compile Include="Assets\MY STUFF\Scripts\Item\ItemDatabase.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Pause.cs" />
+    <Compile Include="Assets\MY STUFF\Scripts\PickUpItem.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Stats.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\WalkToPlayer.cs" />
     <Compile Include="Assets\Troll Bridge Studios\2D Starter Kit\_Scripts\AI\Point_To_Point_Movement.cs" />
