@@ -1,72 +1,84 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
     public int slotsX, slotsY;
-    public List<Item> inventory = new List<Item>();
-    public List<Item> slots = new List<Item>();
+    public List<Sprite> inventory = new List<Sprite>();
+    //public List<Texture2D> slots = new List<Texture2D>();
     public GUISkin skin;
     private bool showInventory;
 	public Dictionary<string, Item> database = new Dictionary<string, Item>();
 
 	public Sword swordPrefab;
 	public PotionHP potionHPPrefab;
+    public Button slot;
 
 	void Start() {
-		for (int i = 0; i < (slotsX * slotsY); i++) {
-			slots.Add(new Item());
-		}
-
-		//database = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
-		//inventory.Add(new Sword());
-		//inventory.Add(new PotionHP());
-
-		AddItemToDB ("Master Sword", Instantiate(swordPrefab) as Sword);
-		AddItemToDB ("HP Potion", Instantiate (potionHPPrefab) as PotionHP);
-
+		AddItemToDB ("Master Sword", Instantiate(swordPrefab));
+		AddItemToDB ("HP Potion", Instantiate (potionHPPrefab));
+        
 		AddItemToInv ("Master Sword");
 		AddItemToInv ("HP Potion");
+
+        InitInventoryGUI();
 	}
 
 	private void AddItemToDB(string name, Item item){
 		database [name] = item;
 	}
 
-	public Item AddItemToInv(string name){
+	public void AddItemToInv(string name){
 		Item item = database[name];
-		Item newItem = Instantiate(item) as Item;
-		newItem.transform.parent = transform.parent;
-		inventory.Add (newItem);
-		Debug.Log (item);
-		//Debug.Log (newItem.itemName);
-		//Debug.Log ((Item)newItem);
-		return newItem;
+		inventory.Add (item.itemIcon);
 	}
 		
     public void TurnOnOffInventory() {
         showInventory = !showInventory;
+        ShowHideInventory(showInventory);
     }
 
-    void OnGUI() {
-        GUI.skin = skin;
-        if (showInventory) {
-            DrawInventory();
+    void InitInventoryGUI()
+    {
+        int count = 0;
+        Button slotXY;
+        int invX = 0;
+        int invY = 0;
+        for (int y = slotsY - 1; y >= 0; y--)
+        {
+            for (int x = 0; x < slotsX; x++)
+            {
+                if (count < inventory.Count)
+                {
+                    
+                    slotXY = Instantiate(slot, new Vector3(x * 40 + 40, y * 40 - 50 * slotsY, 0), transform.rotation) as Button;
+                    slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = inventory[invX + invY*slotsY];
+                    slotXY.gameObject.SetActive(false);
+                    
+                    slotXY.transform.SetParent(transform, false);
+                    count++;
+                }
+                else
+                {
+                    slotXY = Instantiate(slot, new Vector3(x * 40 + 40, y * 40 - 50 * slotsY, 0), transform.rotation) as Button;
+                    slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = slotXY.gameObject.GetComponent<Image>().sprite;
+                    slotXY.gameObject.SetActive(false);
+                    slotXY.transform.SetParent(transform, false);
+                }
+                invX++;
+            }           
+            invY++;
         }
     }
 
-    void DrawInventory() {
-        int count = 0;
+    void ShowHideInventory(bool show) {
+        Button slotXY;
         for (int y = 0; y < slotsY; y++) {
             for (int x = 0; x < slotsX; x++) {
-                if (count < inventory.Count) {
-                    GUI.Box(new Rect(x * 40, y * 40, 32, 32), inventory[(x % slotsX + y / slotsY)].itemIcon, skin.GetStyle("Slot"));
-                    count++;
-                }else {
-                    GUI.Box(new Rect(x * 40, y * 40, 32, 32), "", skin.GetStyle("Slot"));
-                }
+                slotXY = transform.GetChild(x + y * slotsX).GetComponent<Button>();
+                slotXY.gameObject.SetActive(show);
             }
         }
-        //inventory[(x / slotsX + y % slotsY)].itemName
     }
 }

@@ -59,7 +59,7 @@ MonoBehaviour:
   itemName: HP Potion
   itemID: 1
   itemDesc: Refreshing!
-  itemIcon: {fileID: 2800000, guid: 4a6db3295a2d31e46acd562d09fbd626, type: 3}
+  itemIcon: {fileID: 21300000, guid: 4a6db3295a2d31e46acd562d09fbd626, type: 3}
   itemType: 2
 --- !u!212 &21255972
 SpriteRenderer:

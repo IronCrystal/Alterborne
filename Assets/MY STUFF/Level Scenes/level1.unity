@@ -85,26 +85,6 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &95286565 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-  m_PrefabInternal: {fileID: 118162918}
---- !u!114 &95286566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 95286565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65384096a3dec64286c508cebcbe633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Master Sword
-  itemID: 0
-  itemDesc: Link's Master Sword
-  itemIcon: {fileID: 2800000, guid: 0d8eab50ec1d6ee42910e39f5fca0c65, type: 3}
-  itemType: 0
 --- !u!4 &95286569 stripped
 Transform:
   m_PrefabParentObject: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
@@ -264,7 +244,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
       propertyPath: m_Name
@@ -613,38 +593,12 @@ Transform:
   - {fileID: 1971560753}
   - {fileID: 421438331}
   - {fileID: 1821367196}
-  - {fileID: 840796755}
   - {fileID: 198742438}
   - {fileID: 95286569}
   - {fileID: 1604515475}
-  - {fileID: 391873581}
   - {fileID: 1092570704}
   m_Father: {fileID: 0}
   m_RootOrder: 16
---- !u!1 &391873577 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-  m_PrefabInternal: {fileID: 1727171650}
---- !u!114 &391873578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 391873577}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65384096a3dec64286c508cebcbe633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Master Sword
-  itemID: 0
-  itemDesc: Link's Master Sword
-  itemIcon: {fileID: 2800000, guid: 0d8eab50ec1d6ee42910e39f5fca0c65, type: 3}
-  itemType: 0
---- !u!4 &391873581 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-  m_PrefabInternal: {fileID: 1727171650}
 --- !u!1 &407218381
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,52 +659,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
---- !u!1001 &503731157
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 304348628}
-    m_Modifications:
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.115271
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.5786748
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 109908, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-      propertyPath: m_Name
-      value: HP Potion (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &586053761
 GameObject:
   m_ObjectHideFlags: 0
@@ -1186,10 +1094,6 @@ Prefab:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &840796755 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
-  m_PrefabInternal: {fileID: 503731157}
 --- !u!1001 &902356093
 Prefab:
   m_ObjectHideFlags: 0
@@ -1518,7 +1422,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
       propertyPath: m_Name
@@ -1564,7 +1468,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
       propertyPath: m_Name
@@ -2099,7 +2003,7 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1188425168}
+  - 224: {fileID: 1188425168}
   - 114: {fileID: 1188425167}
   m_Layer: 0
   m_Name: Inventory
@@ -2122,23 +2026,28 @@ MonoBehaviour:
   slotsX: 5
   slotsY: 2
   inventory: []
-  slots: []
   skin: {fileID: 11400000, guid: 7d178683bdd38a74094097db53be6b8f, type: 2}
   swordPrefab: {fileID: 11414622, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
   potionHPPrefab: {fileID: 11439070, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
---- !u!4 &1188425168
-Transform:
+  slot: {fileID: 11459940, guid: 99b3652216b1df9428f4ee523edb0608, type: 2}
+--- !u!224 &1188425168
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1188425166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.17464125, y: 0.31268466, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
-  m_Father: {fileID: 1525276839}
-  m_RootOrder: 1
+  m_Father: {fileID: 1925953574}
+  m_RootOrder: 7
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 16.340027, y: -16}
+  m_SizeDelta: {x: 32, y: 32}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1283780805
 Prefab:
   m_ObjectHideFlags: 0
@@ -2392,7 +2301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 487394, guid: 96a3b6c5a2ad2c648b347ffd846a1eba, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5004814, guid: 96a3b6c5a2ad2c648b347ffd846a1eba, type: 2}
       propertyPath: m_Mass
@@ -2464,7 +2373,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 402684, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 109908, guid: 34ecf776af67eae47a98c60cbed95b71, type: 2}
       propertyPath: m_TagString
@@ -2786,81 +2695,10 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1598125889}
---- !u!1 &1604515471 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-  m_PrefabInternal: {fileID: 1089681623}
---- !u!114 &1604515472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1604515471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a65384096a3dec64286c508cebcbe633, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemName: Master Sword
-  itemID: 0
-  itemDesc: Link's Master Sword
-  itemIcon: {fileID: 2800000, guid: 0d8eab50ec1d6ee42910e39f5fca0c65, type: 3}
-  itemType: 0
 --- !u!4 &1604515475 stripped
 Transform:
   m_PrefabParentObject: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
   m_PrefabInternal: {fileID: 1089681623}
---- !u!1001 &1727171650
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 304348628}
-    m_Modifications:
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.135359
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -4.127447
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 447866, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 6130138, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 188446, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-      propertyPath: m_TagString
-      value: Item
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 0}
-  m_ParentPrefab: {fileID: 100100000, guid: b1a12938214f4be449eaf9ea2e507576, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &1732104573
 GameObject:
   m_ObjectHideFlags: 0

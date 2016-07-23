@@ -6,7 +6,7 @@ public class Item : MonoBehaviour{
     public string itemName;
     public int itemID;
     public string itemDesc;
-    public Texture2D itemIcon;
+    public Sprite itemIcon;
     public ItemType itemType;
 
     public enum ItemType {
@@ -20,7 +20,7 @@ public class Item : MonoBehaviour{
         this.itemID = id;
         this.itemDesc = desc;
         this.itemType = type;
-        this.itemIcon = Resources.Load<Texture2D>("Item Icons/" + name);
+        this.itemIcon = Resources.Load<Sprite>("Item Icons/" + name);
     }
 
 	public Item(Item oldItem) : this(oldItem.itemName, oldItem.itemID, oldItem.itemDesc, oldItem.itemType){ }
