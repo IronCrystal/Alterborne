@@ -37,10 +37,12 @@ public class Four_Direction_Movement : MonoBehaviour {
 	void Update(){
 		// IF we are able to move.
 		if(_playerManager.playerState.CanPlayerMove){
-			// Get a -1, 0 or 1.
-			moveHorizontal = Input.GetAxisRaw ("Horizontal");
-			moveVertical = Input.GetAxisRaw ("Vertical");
-		}
+            // Get a -1, 0 or 1.
+            //moveHorizontal = Input.GetAxisRaw ("Horizontal");
+            //moveVertical = Input.GetAxisRaw ("Vertical");
+            moveHorizontal = UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.GetAxis("Horizontal");
+            moveVertical = UnityStandardAssets.CrossPlatformInput.CrossPlatformInputManager.GetAxis("Vertical");
+        }
 	}
 
 	void FixedUpdate(){

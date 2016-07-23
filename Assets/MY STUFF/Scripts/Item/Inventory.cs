@@ -5,42 +5,51 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
     public int slotsX, slotsY;
-    public List<Sprite> inventory = new List<Sprite>();
+    public List<Item> inventory = new List<Item>();
     //public List<Texture2D> slots = new List<Texture2D>();
     public GUISkin skin;
     private bool showInventory;
-	public Dictionary<string, Item> database = new Dictionary<string, Item>();
+	public Dictionary<int, Item> database = new Dictionary<int, Item>();
 
 	public Sword swordPrefab;
 	public PotionHP potionHPPrefab;
     public Button slot;
 
 	void Start() {
-		AddItemToDB ("Master Sword", Instantiate(swordPrefab));
-		AddItemToDB ("HP Potion", Instantiate (potionHPPrefab));
+        //Sword sword = new Sword();
+        //Debug.Log(sword);
+        // sword1 = Instantiate(swordPrefab);
+        //Debug.Log(sword1);
+
+        AddItemToDB (0, new Sword());
+		AddItemToDB (1, new PotionHP());
         
-		AddItemToInv ("Master Sword");
-		AddItemToInv ("HP Potion");
+		//AddItemToInv ("Master Sword");
+		//AddItemToInv ("HP Potion");
 
         InitInventoryGUI();
 	}
 
-	private void AddItemToDB(string name, Item item){
-		database [name] = item;
+	private void AddItemToDB(int id, Item item){
+		database [id] = item;
 	}
 
-	public void AddItemToInv(string name){
-		Item item = database[name];
-		inventory.Add (item.itemIcon);
+	public void AddItemToInv(int id){
+		Item item = database[id];
+		inventory.Add (item);
 	}
 		
     public void TurnOnOffInventory() {
         showInventory = !showInventory;
-        ShowHideInventory(showInventory);
+        ShowHideInventory();
     }
 
-    void InitInventoryGUI()
+    public void InitInventoryGUI()
     {
+        for (int c = 0;  c < transform.childCount; c++) {
+            Destroy(transform.GetChild(c).gameObject);
+        }
+
         int count = 0;
         Button slotXY;
         int invX = 0;
@@ -51,10 +60,9 @@ public class Inventory : MonoBehaviour {
             {
                 if (count < inventory.Count)
                 {
-                    
                     slotXY = Instantiate(slot, new Vector3(x * 40 + 40, y * 40 - 50 * slotsY, 0), transform.rotation) as Button;
-                    slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = inventory[invX + invY*slotsY];
-                    slotXY.gameObject.SetActive(false);
+                    slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = inventory[invX + invY*slotsX].itemIcon;
+                    slotXY.gameObject.SetActive(showInventory);
                     
                     slotXY.transform.SetParent(transform, false);
                     count++;
@@ -63,21 +71,22 @@ public class Inventory : MonoBehaviour {
                 {
                     slotXY = Instantiate(slot, new Vector3(x * 40 + 40, y * 40 - 50 * slotsY, 0), transform.rotation) as Button;
                     slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = slotXY.gameObject.GetComponent<Image>().sprite;
-                    slotXY.gameObject.SetActive(false);
+                    slotXY.gameObject.SetActive(showInventory);
                     slotXY.transform.SetParent(transform, false);
                 }
                 invX++;
             }           
             invY++;
+            invX = 0;
         }
     }
 
-    void ShowHideInventory(bool show) {
+    void ShowHideInventory() {
         Button slotXY;
         for (int y = 0; y < slotsY; y++) {
             for (int x = 0; x < slotsX; x++) {
                 slotXY = transform.GetChild(x + y * slotsX).GetComponent<Button>();
-                slotXY.gameObject.SetActive(show);
+                slotXY.gameObject.SetActive(showInventory);
             }
         }
     }

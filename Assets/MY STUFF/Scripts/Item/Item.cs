@@ -2,7 +2,7 @@
 using System.Collections;
 
 [System.Serializable]
-public class Item : MonoBehaviour{
+public class Item {
     public string itemName;
     public int itemID;
     public string itemDesc;
@@ -12,7 +12,9 @@ public class Item : MonoBehaviour{
     public enum ItemType {
         Weapon,
         Apparel,
-        Consumable
+        Consumable,
+        Misc,
+        Quest
 	};
 
     public Item(string name, int id, string desc, ItemType type) {
