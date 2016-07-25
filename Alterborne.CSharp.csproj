@@ -86,6 +86,7 @@
     <Compile Include="Assets\MY STUFF\Scripts\Item\ItemIcon.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Item\PotionHP.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Item\Sword.cs" />
+    <Compile Include="Assets\MY STUFF\Scripts\Menu\HandleMainMenu.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Network\LoginScreen.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Network\VerifyLogin.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Pause.cs" />

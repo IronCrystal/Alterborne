@@ -12,6 +12,9 @@ TagManager:
   - Item
   - ItemDatabase
   - Inventory
+  - LoginUI
+  - CreateAccountUI
+  - MainMenuUI
   layers:
   - Default
   - TransparentFX

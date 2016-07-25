@@ -16,7 +16,7 @@ public class VerifyLogin : MonoBehaviour {
 
          // check for errors
         if (www.error == null) {
-            Debug.Log(www.data);
+            Debug.Log(www.text);
         } else {
             Debug.Log(www.error);
         }
@@ -25,7 +25,7 @@ public class VerifyLogin : MonoBehaviour {
     public void Login() {
         string username = inputUsername.text;
         string password = inputPassword.text;
-        string url = "localhost/test.php";
+        string url = "localhost/login.php";
 
         WWWForm form = new WWWForm();
         form.AddField("username", username);
