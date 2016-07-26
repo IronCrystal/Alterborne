@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -92,10 +86,7 @@
     <Compile Include="Assets\MY STUFF\Scripts\Item\Item.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Item\ItemConsumable.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Item\ItemDatabase.cs" />
-    <Compile Include="Assets\MY STUFF\Scripts\Item\ItemIcon.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Item\ItemWeapon.cs" />
-    <Compile Include="Assets\MY STUFF\Scripts\Item\PotionHP.cs" />
-    <Compile Include="Assets\MY STUFF\Scripts\Item\Sword.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Menu\HandleMainMenu.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Network\LoginScreen.cs" />
     <Compile Include="Assets\MY STUFF\Scripts\Network\VerifyLogin.cs" />

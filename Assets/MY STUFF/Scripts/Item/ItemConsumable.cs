@@ -4,10 +4,10 @@ using System.Collections;
 public class ItemConsumable : Item
 {
 
-    public int amount;
-    public HealType healType;
+    public int amount; //amount it heals (could be negative)
+    public HealType healType; //what it heals
 
-    public enum HealType
+    public enum HealType //could include effects here
     {
         HP,
         Mana,

@@ -3,8 +3,9 @@ using System.Collections;
 
 public class ItemWeapon : Item {
 
-    public int damage;
+    public int damage; //damage the weapon deals
     public AttackType attack;
+
     public enum AttackType {
         Wide, //cone attack in front
         Circle, //all around
