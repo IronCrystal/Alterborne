@@ -25,7 +25,5 @@ public class Item {
         this.itemIcon = Resources.Load<Sprite>("Item Icons/" + name);
     }
 
-	public Item(Item oldItem) : this(oldItem.itemName, oldItem.itemID, oldItem.itemDesc, oldItem.itemType){ }
-
     public Item() { }
 }

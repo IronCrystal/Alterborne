@@ -21,13 +21,15 @@ public class PickUpItem : MonoBehaviour {
         Debug.Log("Collision entered!");
         if (other.tag == "Item") {
 		    //inv = transform.GetChild(0).GetComponent<Inventory>();
-		    item = other.GetComponent<Item> ();
+		    this.item = other.GetComponent<GroundItem> ().item;
             id = item.itemID;
-            if (inv.inventory.Count < (inv.slotsX * inv.slotsY)) {
-                Destroy(other.gameObject);
-			    inv.AddItemToInv(id);
-                inv.InitInventoryGUI();
-                
+            if (inv.AddItemToInv(id)){
+                Destroy(other.gameObject);			    
+                inv.DrawInventoryGUI();                
+            }
+            else
+            {
+                Debug.Log("not enough room!");
             }
         }
 		else {

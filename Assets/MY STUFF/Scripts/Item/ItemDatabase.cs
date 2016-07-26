@@ -2,23 +2,22 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class ItemDatabase : MonoBehaviour {
-	public Dictionary<string, Item> database = new Dictionary<string, Item>();
-	public Inventory inv;
+public class ItemDatabase : MonoBehaviour{
+	private Dictionary<int, Item> database = new Dictionary<int, Item>();
+	//public Inventory inv;
 
-    void Start() {
-		AddItemToDB ("Sword", new Sword ());
-		AddItemToDB ("HP Potion", new PotionHP ());
+    void Awake()
+    {
+        addData(0, new ItemWeapon("Master Sword", 0, "Links's Master Sword", 10, ItemWeapon.AttackType.Forward));
+        addData(1, new ItemConsumable("HP Potion", 1, "Refreshing!", 20, ItemConsumable.HealType.HP));
     }
 
-	void AddItemToDB(string name, Item item){
-		database [name] = item;
+	void addData(int id, Item item){
+		database [id] = item;
 	}
 
-	public Item AddItemToInv(string name){
-		Item item = database[name];
-		Item newItem = new Item (item);
-		//inv.AddItem (newItem);
-		return newItem;
-	}
+    public Item getData(int key)
+    {
+        return database[key];
+    }
 }

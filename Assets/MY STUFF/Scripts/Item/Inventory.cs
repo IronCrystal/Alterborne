@@ -5,38 +5,40 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour {
     public int slotsX, slotsY;
-    public List<Item> inventory = new List<Item>();
+    public ItemDatabase database;
+
+    public Item[,] inventory;
+    int itemCount;
     //public List<Texture2D> slots = new List<Texture2D>();
     public GUISkin skin;
     private bool showInventory;
-	public Dictionary<int, Item> database = new Dictionary<int, Item>();
 
-	public Sword swordPrefab;
-	public PotionHP potionHPPrefab;
     public Button slot;
+    Item item;
 
-	void Start() {
-        //Sword sword = new Sword();
-        //Debug.Log(sword);
-        // sword1 = Instantiate(swordPrefab);
-        //Debug.Log(sword1);
-
-        AddItemToDB (0, new Sword());
-		AddItemToDB (1, new PotionHP());
-        
-		//AddItemToInv ("Master Sword");
-		//AddItemToInv ("HP Potion");
-
-        InitInventoryGUI();
+	void Start() {    
+        inventory = new Item[slotsX, slotsY];
+        itemCount = 0;
+		AddItemToInv (0);
+        AddItemToInv(1);
+        DrawInventoryGUI();
 	}
 
-	private void AddItemToDB(int id, Item item){
-		database [id] = item;
-	}
-
-	public void AddItemToInv(int id){
-		Item item = database[id];
-		inventory.Add (item);
+	public bool AddItemToInv(int id){
+		item = database.getData(id);
+        for (int y = 0; y < slotsY; y++)
+        {
+            for (int x = 0; x < slotsX; x++)
+            {
+                if (inventory[x, y] == null)
+                {
+                    inventory[x, y] = item;
+                    itemCount++;
+                    return true;
+                }
+            }
+        }
+        return false;
 	}
 		
     public void TurnOnOffInventory() {
@@ -44,7 +46,7 @@ public class Inventory : MonoBehaviour {
         ShowHideInventory();
     }
 
-    public void InitInventoryGUI()
+    public void DrawInventoryGUI()
     {
         for (int c = 0;  c < transform.childCount; c++) {
             Destroy(transform.GetChild(c).gameObject);
@@ -58,10 +60,10 @@ public class Inventory : MonoBehaviour {
         {
             for (int x = 0; x < slotsX; x++)
             {
-                if (count < inventory.Count)
+                if (count < itemCount)
                 {
                     slotXY = Instantiate(slot, new Vector3(x * 40 + 40, y * 40 - 50 * slotsY, 0), transform.rotation) as Button;
-                    slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = inventory[invX + invY*slotsX].itemIcon;
+                    slotXY.gameObject.transform.GetChild(0).gameObject.GetComponent<Image>().sprite = inventory[invX, invY].itemIcon;
                     slotXY.gameObject.SetActive(showInventory);
                     
                     slotXY.transform.SetParent(transform, false);

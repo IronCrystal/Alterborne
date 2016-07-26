@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class HandleMainMenu : MonoBehaviour {
-    public string singlePlayerSceneName;
 
     public InputField inputLoginUsername;
     public InputField inputLoginPassword;
@@ -15,47 +14,21 @@ public class HandleMainMenu : MonoBehaviour {
     public InputField inputCreatePassword;
     public InputField inputCreatePasswordAgain;
 
-    private List<GameObject> LoginUIObjects;
-    private List<GameObject> CreateAccountUIObjects;
-    private List<GameObject> MainMenuUIObjects;
+    public GameObject LoginUIObjects;
+    public GameObject CreateAccountUIObjects;
+    public GameObject MainMenuUIObjects;
 
     // Use this for initialization
     void Start () {
-        LoginUIObjects = new List<GameObject>();
-        CreateAccountUIObjects = new List<GameObject>();
-        MainMenuUIObjects = new List<GameObject>();
-        foreach (GameObject go in GameObject.FindGameObjectsWithTag("LoginUI")) {
-            LoginUIObjects.Add(go);
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in GameObject.FindGameObjectsWithTag("CreateAccountUI")) {
-            CreateAccountUIObjects.Add(go);
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in GameObject.FindGameObjectsWithTag("MainMenuUI")) {
-            MainMenuUIObjects.Add(go);
-        }
+        LoginUIObjects.SetActive(false);
+        CreateAccountUIObjects.SetActive(false);
+        MainMenuUIObjects.SetActive(true);
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     public void OpenLoginUI() {
-        foreach (GameObject go in LoginUIObjects) {
-            go.SetActive(true);
-        }
-
-        foreach (GameObject go in MainMenuUIObjects) {
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in CreateAccountUIObjects) {
-            go.SetActive(false);
-        }
+        LoginUIObjects.SetActive(true);
+        CreateAccountUIObjects.SetActive(false);
+        MainMenuUIObjects.SetActive(false);
     }
 
     //Called when clicking Login within LoginUI
@@ -85,32 +58,16 @@ public class HandleMainMenu : MonoBehaviour {
 
     //Called when clickign CreateAccount within LoginUI
     public void CreateAccount() {
-        foreach (GameObject go in LoginUIObjects) {
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in MainMenuUIObjects) {
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in CreateAccountUIObjects) {
-            go.SetActive(true);
-        }
+        LoginUIObjects.SetActive(false);
+        CreateAccountUIObjects.SetActive(true);
+        MainMenuUIObjects.SetActive(false);
     }
 
     //Called when clicking Back within LoginUI
     public void BackLogin() {
-        foreach (GameObject go in LoginUIObjects) {
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in MainMenuUIObjects) {
-            go.SetActive(true);
-        }
-
-        foreach (GameObject go in CreateAccountUIObjects) {
-            go.SetActive(false);
-        }
+        LoginUIObjects.SetActive(false);
+        CreateAccountUIObjects.SetActive(false);
+        MainMenuUIObjects.SetActive(true);      
     }
     
     public void CreateNewAccount() {
@@ -136,20 +93,12 @@ public class HandleMainMenu : MonoBehaviour {
 
     //Called when clicking Back within CreateAccountUI
     public void BackCreate() {
-        foreach (GameObject go in LoginUIObjects) {
-            go.SetActive(true);
-        }
-
-        foreach (GameObject go in MainMenuUIObjects) {
-            go.SetActive(false);
-        }
-
-        foreach (GameObject go in CreateAccountUIObjects) {
-            go.SetActive(false);
-        }
+        LoginUIObjects.SetActive(true);
+        CreateAccountUIObjects.SetActive(false);
+        MainMenuUIObjects.SetActive(false);        
     }
 
     public void SinglePlayer() {
-        SceneManager.LoadScene(singlePlayerSceneName);
+        SceneManager.LoadScene(1);
     }
 }

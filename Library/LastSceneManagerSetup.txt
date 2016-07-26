@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/MY STUFF/Level Scenes/LoginTest.unity
+- path: Assets/MY STUFF/Level Scenes/level1.unity
   isLoaded: 1
   isActive: 1
